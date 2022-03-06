@@ -21,8 +21,8 @@ class CancionesAdmin(ModelAdmin):
     # These stub classes allow us to put various models into the custom "Wagtail Bakery" menu item
     # rather than under the default Snippets section.
     model = Cancion
-    search_fields = ('title', 'position', 'rating')
-    menu_icon = 'fa-suitcase'  # change as required
+    menu_label = 'Canciones'
+    menu_icon = 'group'  # change as required
     menu_order = 200  # will put in 3rd place (000 being 1st, 100 2nd)
 
 

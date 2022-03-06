@@ -1,0 +1,96 @@
+{
+  "docs":[
+    {
+      "rank":"1",
+      "title":"We Don't Talk About Bruno",
+      "artist":"Carolina Gaitan, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz & Encanto Cast",
+      "weeks at no.1":"5",
+      "last week":"1",
+      "peak":"1",
+      "weeks":"9",
+      "detail":"same"
+      },
+    {
+      "rank":"2",
+      "title":"Heat Waves",
+      "artist":"Glass Animals",
+      "last week":"2",
+      "peak":"2",
+      "weeks":"58",
+      "detail":"same"
+      },
+      {
+      "rank":"3",
+      "title":"abcdefu",
+      "artist":"GAYLE",
+      "last week":"4",
+      "peak":"3",
+      "weeks":"14",
+      "detail":"up"
+      },
+      {
+      "rank":"4",
+      "title":"Easy On Me",
+      "artist":"Adele",
+      "last week":"3",
+      "peak":"1",
+      "weeks":"20",
+      "detail":"down"
+      },
+      {
+      "rank":"5",
+      "title":"Super Gremlin",
+      "artist":"Kodak Black",
+      "last week":"6",
+      "peak":"5",
+      "weeks":"16",
+      "detail":"up"
+      },
+      {
+      "rank":"6",
+      "title":"Stay",
+      "artist":"The Kid LAROI & Justin Bieber",
+      "last week":"5",
+      "peak":"1",
+      "weeks":"33",
+      "detail":"down"
+      },
+      {
+      "rank":"7",
+      "title":"Ghost",
+      "artist":"Justin Bieber",
+      "last week":"8",
+      "peak":"7",
+      "weeks":"22",
+      "detail":"up"
+      },
+      {
+      "rank":"8",
+      "title":"Shivers",
+      "artist":"Ed Sheeran",
+      "last week":"7",
+      "peak":"4",
+      "weeks":"24",
+      "detail":"down"
+      },
+     {
+      "rank":"9",
+      "title":"Bad Habits",
+      "artist":"Ed Sheeran",
+      "last week":"14",
+      "peak":"2",
+      "weeks":"35",
+      "detail":"up"
+      },
+      {
+      "rank":"10",
+      "title":"Cold Heart (PNAU Remix)",
+      "artist":"Elton John & Dua Lipa",
+      "last week":"12",
+      "peak":"7",
+      "weeks":"25",
+      "detail":"up"
+      }
+      
+  ]
+}

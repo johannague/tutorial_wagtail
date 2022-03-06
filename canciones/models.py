@@ -17,26 +17,23 @@ from wagtail.snippets.models import register_snippet
 
 
 class Cancion(models.Model):
-    title = models.CharField('título', max_length=250)
-    #slug = models.SlugField()
-    position = models.IntegerField()
-    rating = models.DecimalField(max_digits=6, decimal_places=4)
-    link = models.URLField()
-    place = models.IntegerField()
-    imagen = models.URLField()
+    rank = models.CharField('rank', max_length=250)
+    title = models.CharField('title', max_length=250)
+    artist = models.CharField('artist', max_length=250)
+    peak = models.CharField('peak', max_length=250)
+    weeks = models.CharField('weeks', max_length=250)
+   
 
 
     panels = [
         FieldPanel('title'),
-        FieldPanel('position'),
-        FieldPanel('rating'),
-        FieldPanel('link'),
-        FieldPanel('place'),
-        FieldPanel('imagen'),
-        
+        FieldPanel('rank'),
+        FieldPanel('artist'),
+        FieldPanel('peak'),
+        FieldPanel('weeks')        
     ]
     def __str__(self):
-        return f'{self.title} ({self.position})'
+        return f'{self.title}'
 
 class CancionesIndexPage(Page):
     introduccion = RichTextField(blank=True)
@@ -48,7 +45,9 @@ class CancionesIndexPage(Page):
     def get_context(self, request):
         # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
-        context['canciones'] = Cancion.objects.all()
+        canciones = Cancion.objects.all().order_by('rank')
+        context['canciones'] = self.paginate(request, canciones)
+        
         
         return context
 
