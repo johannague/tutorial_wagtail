@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container mt-5">
+    <div id="carouselExampleSlidesOnly h-25" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/media/original_images/tecnology1.jpeg" class="d-block w-100 h-25" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/media/original_images/tecnology2.jpeg" class="d-block w-100 h-25 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/media/original_images/canciones1.jpeg" class="d-block w-100 h-25" alt="...">
+          </div>
+        </div>
+      </div>
+
+{{page.body | richtext}}
+
+<br>
+<div>
+    <h3>Últimas noticias</h3>
+    {% for noticia in noticias %}
+    <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ noticia.title }}</h5>
+          <p class="card-text">{{ noticia.intro }}</p>
+          <a href="{{noticia.get_url}}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+    {% endfor %}
+    <div style="float: right;"><a href="//localhost:8000/noticias-pel%C3%ADculas/">Ver todas las noticias</a></div>
+</div>
+
+
+</div>
+
+<br>
+<br>
+{% endblock content %}
