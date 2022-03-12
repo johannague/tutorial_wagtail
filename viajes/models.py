@@ -17,7 +17,6 @@ class Viaje(models.Model):
 
     panels = [
         FieldPanel('nombre'),
-        #FieldPanel('slug'),
         FieldPanel('link'),
         FieldPanel('coordenadas'),
         FieldPanel('imagen')
